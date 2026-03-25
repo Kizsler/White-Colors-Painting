@@ -39,7 +39,11 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero__image">
-      <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1920&q=80&fit=crop" alt="Professional painter rolling fresh paint on a wall" loading="eager">
+      <picture>
+        <source media="(max-width: 768px)"
+                srcset="https://images.unsplash.com/photo-1500628550463-c8881a54d4d4?w=800&h=1200&q=80&fit=crop&crop=top">
+        <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1920&q=80&fit=crop" alt="Professional painter at work" loading="eager">
+      </picture>
       <div class="hero__overlay"></div>
     </div>
     <div class="hero__content">
