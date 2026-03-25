@@ -7,7 +7,7 @@
   <meta name="description" content="White Colors Painting delivers premium residential and commercial painting services with meticulous craftsmanship and a refined eye for detail.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,8 +16,10 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="#" class="nav__logo">
-        <span class="nav__logo-mark"></span>
-        White Colors
+        <div class="nav__logo-icon">
+          <span></span><span></span><span></span>
+        </div>
+        White Colors<span class="nav__logo-sub">Painting Co.</span>
       </a>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span>
@@ -26,234 +28,206 @@
       </button>
       <div class="nav__links" id="navLinks">
         <a href="#services">Services</a>
-        <a href="#work">Our Work</a>
-        <a href="#process">Process</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact" class="nav__cta">Get a Quote</a>
+        <a href="#work">Portfolio</a>
+        <a href="#why">Why Us</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact" class="nav__cta">Free Estimate</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero__bg">
-      <div class="hero__stroke hero__stroke--1"></div>
-      <div class="hero__stroke hero__stroke--2"></div>
-      <div class="hero__stroke hero__stroke--3"></div>
-      <div class="hero__grain"></div>
+    <div class="hero__image">
+      <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1920&q=80&fit=crop" alt="Professional painter rolling fresh paint on a wall" loading="eager">
+      <div class="hero__overlay"></div>
     </div>
     <div class="hero__content">
-      <p class="hero__tag">Premium Painting Services</p>
+      <div class="hero__badge">Trusted Since 2018</div>
       <h1 class="hero__title">
-        Every wall tells<br>
-        <em>a story.</em>
+        We paint homes<br>people <em>love</em> coming<br>back to.
       </h1>
       <p class="hero__sub">
-        We bring spaces to life with meticulous craftsmanship, premium materials,
-        and an artist's eye for detail. Residential & commercial.
+        Premium residential & commercial painting in the metro area.
+        Meticulous prep. Flawless finish. Guaranteed.
       </p>
       <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary">Get Free Estimate</a>
-        <a href="#work" class="btn btn--ghost">View Our Work</a>
+        <a href="#contact" class="btn btn--accent">Get Your Free Estimate</a>
+        <a href="#work" class="btn btn--white">See Our Work</a>
       </div>
-      <div class="hero__swatches">
-        <span class="swatch swatch--ivory" title="Antique Ivory"></span>
-        <span class="swatch swatch--terracotta" title="Warm Terracotta"></span>
-        <span class="swatch swatch--sage" title="Sage Garden"></span>
-        <span class="swatch swatch--blue" title="Coastal Mist"></span>
-        <span class="swatch swatch--charcoal" title="Deep Charcoal"></span>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <strong>500+</strong>
+          <span>Projects Done</span>
+        </div>
+        <div class="hero__stat">
+          <strong>4.9</strong>
+          <span>Google Rating</span>
+        </div>
+        <div class="hero__stat">
+          <strong>8+</strong>
+          <span>Years Experience</span>
+        </div>
       </div>
-    </div>
-    <div class="hero__scroll">
-      <span>Scroll</span>
-      <div class="hero__scroll-line"></div>
     </div>
   </section>
 
   <!-- Services -->
   <section class="services" id="services">
     <div class="container">
-      <div class="section-header">
-        <p class="section-tag">What We Do</p>
-        <h2 class="section-title">Crafted with<br><em>precision.</em></h2>
+      <div class="section-header section-header--center">
+        <p class="section-tag">Our Services</p>
+        <h2 class="section-title">Everything your space needs,<br><em>nothing it doesn't.</em></h2>
       </div>
       <div class="services__grid">
         <article class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="6" y="10" width="36" height="28" rx="2"/>
-              <path d="M6 18h36"/>
-              <path d="M16 10V6"/>
-              <path d="M32 10V6"/>
-              <circle cx="24" cy="30" r="6"/>
-            </svg>
+          <div class="service-card__img">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80&fit=crop" alt="Bright, freshly painted living room interior" loading="lazy">
           </div>
-          <h3>Interior Painting</h3>
-          <p>Transform your living spaces with flawless finishes. From accent walls to full-home repaints, we handle every detail with care.</p>
-          <ul class="service-card__tags">
-            <li>Walls & Ceilings</li>
-            <li>Trim & Molding</li>
-            <li>Cabinet Refinishing</li>
-          </ul>
+          <div class="service-card__body">
+            <h3>Interior Painting</h3>
+            <p>Walls, ceilings, trim, and cabinets. We prep meticulously and paint with precision — your furniture stays protected, your home stays clean.</p>
+            <ul class="service-card__tags">
+              <li>Walls & Ceilings</li>
+              <li>Trim & Molding</li>
+              <li>Cabinet Refinishing</li>
+            </ul>
+          </div>
         </article>
         <article class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M8 40V16l16-10 16 10v24H8z"/>
-              <path d="M18 40V28h12v12"/>
-              <path d="M20 20h8"/>
-            </svg>
+          <div class="service-card__img">
+            <img src="https://images.unsplash.com/photo-1564013799770-0c031355868a?w=600&q=80&fit=crop" alt="Beautiful house exterior with fresh paint" loading="lazy">
           </div>
-          <h3>Exterior Painting</h3>
-          <p>Protect and beautify your property's facade. Weather-resistant coatings applied with professional precision.</p>
-          <ul class="service-card__tags">
-            <li>Siding & Stucco</li>
-            <li>Deck Staining</li>
-            <li>Power Washing</li>
-          </ul>
+          <div class="service-card__body">
+            <h3>Exterior Painting</h3>
+            <p>Protect your biggest investment. We use weather-resistant coatings that look great and last for years — power washing included.</p>
+            <ul class="service-card__tags">
+              <li>Siding & Stucco</li>
+              <li>Deck Staining</li>
+              <li>Power Washing</li>
+            </ul>
+          </div>
         </article>
         <article class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="4" y="8" width="40" height="32" rx="2"/>
-              <path d="M4 16h40"/>
-              <path d="M20 16v24"/>
-              <path d="M28 28h8"/>
-              <path d="M28 34h8"/>
-              <path d="M8 24h8"/>
-              <path d="M8 30h8"/>
-            </svg>
+          <div class="service-card__img">
+            <img src="https://images.unsplash.com/photo-1565262353342-6e919eab5b58?w=600&q=80&fit=crop" alt="Modern commercial office space" loading="lazy">
           </div>
-          <h3>Commercial Projects</h3>
-          <p>Offices, retail spaces, and multi-unit buildings. We work around your schedule to minimize disruption.</p>
-          <ul class="service-card__tags">
-            <li>Office Spaces</li>
-            <li>Retail & Hospitality</li>
-            <li>Multi-Unit</li>
-          </ul>
+          <div class="service-card__body">
+            <h3>Commercial</h3>
+            <p>Offices, retail, restaurants, and multi-unit. We work nights and weekends so your business doesn't skip a beat.</p>
+            <ul class="service-card__tags">
+              <li>Office Spaces</li>
+              <li>Retail & Hospitality</li>
+              <li>Multi-Unit Buildings</li>
+            </ul>
+          </div>
         </article>
         <article class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="24" cy="24" r="18"/>
-              <circle cx="24" cy="24" r="6"/>
-              <path d="M24 6v6"/>
-              <path d="M24 36v6"/>
-              <path d="M6 24h6"/>
-              <path d="M36 24h6"/>
-            </svg>
+          <div class="service-card__img">
+            <img src="https://images.unsplash.com/photo-1621685682093-3b8016dcb57d?w=600&q=80&fit=crop" alt="Paint brush in bucket — color consultation" loading="lazy">
           </div>
-          <h3>Color Consultation</h3>
-          <p>Not sure which colors to choose? Our expert consultants help you find the perfect palette for your space.</p>
-          <ul class="service-card__tags">
-            <li>Palette Design</li>
-            <li>Sample Testing</li>
-            <li>Trend Guidance</li>
-          </ul>
+          <div class="service-card__body">
+            <h3>Color Consultation</h3>
+            <p>Not sure what color? We'll help you choose the perfect palette with on-site samples and expert guidance — included with every project.</p>
+            <ul class="service-card__tags">
+              <li>Palette Design</li>
+              <li>On-Site Samples</li>
+              <li>Trend Guidance</li>
+            </ul>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Work / Portfolio -->
+  <!-- Portfolio -->
   <section class="work" id="work">
     <div class="container">
       <div class="section-header">
-        <p class="section-tag">Portfolio</p>
-        <h2 class="section-title">Spaces we've<br><em>transformed.</em></h2>
+        <p class="section-tag">Our Work</p>
+        <h2 class="section-title">Recent projects we're<br><em>proud of.</em></h2>
       </div>
       <div class="work__grid">
-        <div class="work__item work__item--tall">
-          <div class="work__img" style="--hue: 25; --sat: 30%; --light: 82%;">
-            <div class="work__img-inner">
-              <div class="work__paint-layer" style="background: linear-gradient(135deg, #E8D5C4, #D4B896);"></div>
-              <div class="work__texture"></div>
-            </div>
-          </div>
-          <div class="work__info">
-            <h3>Victorian Revival</h3>
-            <p>Full exterior restoration — historic district</p>
-          </div>
-        </div>
-        <div class="work__item">
-          <div class="work__img" style="--hue: 150; --sat: 20%; --light: 78%;">
-            <div class="work__img-inner">
-              <div class="work__paint-layer" style="background: linear-gradient(135deg, #C5D5C0, #A8C4A0);"></div>
-              <div class="work__texture"></div>
-            </div>
-          </div>
-          <div class="work__info">
-            <h3>Modern Sage Kitchen</h3>
-            <p>Cabinet refinishing & accent walls</p>
-          </div>
-        </div>
-        <div class="work__item">
-          <div class="work__img" style="--hue: 210; --sat: 25%; --light: 80%;">
-            <div class="work__img-inner">
-              <div class="work__paint-layer" style="background: linear-gradient(135deg, #B8C8D8, #9AB0C8);"></div>
-              <div class="work__texture"></div>
-            </div>
-          </div>
-          <div class="work__info">
-            <h3>Coastal Office Suite</h3>
-            <p>Commercial — 4,200 sq ft</p>
-          </div>
-        </div>
-        <div class="work__item work__item--wide">
-          <div class="work__img" style="--hue: 35; --sat: 40%; --light: 90%;">
-            <div class="work__img-inner">
-              <div class="work__paint-layer" style="background: linear-gradient(135deg, #F5EDE0, #EAD9C0);"></div>
-              <div class="work__texture"></div>
-            </div>
-          </div>
-          <div class="work__info">
-            <h3>Minimalist Loft</h3>
-            <p>Open-concept living — warm neutrals throughout</p>
-          </div>
-        </div>
-        <div class="work__item">
-          <div class="work__img" style="--hue: 10; --sat: 45%; --light: 72%;">
-            <div class="work__img-inner">
-              <div class="work__paint-layer" style="background: linear-gradient(135deg, #C4856E, #B06A50);"></div>
-              <div class="work__texture"></div>
-            </div>
-          </div>
-          <div class="work__info">
-            <h3>Terracotta Dining</h3>
-            <p>Feature wall & trim restoration</p>
-          </div>
-        </div>
+        <figure class="work__item work__item--large">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80&fit=crop" alt="Modern living room with fresh neutral paint" loading="lazy">
+          <figcaption>
+            <span class="work__cat">Interior</span>
+            <h3>Modern Neutral Living Room</h3>
+            <p>Full repaint — warm whites & soft grays</p>
+          </figcaption>
+        </figure>
+        <figure class="work__item">
+          <img src="https://images.unsplash.com/photo-1564013799904-bd0a41616365?w=600&q=80&fit=crop" alt="White house with fresh exterior paint" loading="lazy">
+          <figcaption>
+            <span class="work__cat">Exterior</span>
+            <h3>Craftsman Home Revival</h3>
+            <p>Siding, trim & porch restoration</p>
+          </figcaption>
+        </figure>
+        <figure class="work__item">
+          <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=600&q=80&fit=crop" alt="Modern white kitchen" loading="lazy">
+          <figcaption>
+            <span class="work__cat">Kitchen</span>
+            <h3>Cabinet Transformation</h3>
+            <p>Dark oak to bright white — complete refinish</p>
+          </figcaption>
+        </figure>
+        <figure class="work__item">
+          <img src="https://images.unsplash.com/photo-1565262353342-6e919eab5b58?w=600&q=80&fit=crop" alt="Modern commercial interior" loading="lazy">
+          <figcaption>
+            <span class="work__cat">Commercial</span>
+            <h3>Tech Startup Office</h3>
+            <p>4,200 sq ft — weekend turnaround</p>
+          </figcaption>
+        </figure>
+        <figure class="work__item work__item--large">
+          <img src="https://images.unsplash.com/photo-1564013799770-0c031355868a?w=900&q=80&fit=crop" alt="Beautiful residential exterior" loading="lazy">
+          <figcaption>
+            <span class="work__cat">Exterior</span>
+            <h3>Colonial Estate Refresh</h3>
+            <p>Full exterior — weather-resistant finish</p>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <!-- Process -->
-  <section class="process" id="process">
-    <div class="container">
-      <div class="section-header section-header--center">
-        <p class="section-tag">How We Work</p>
-        <h2 class="section-title">From vision to<br><em>reality.</em></h2>
-      </div>
-      <div class="process__timeline">
-        <div class="process__step">
-          <div class="process__number">01</div>
-          <h3>Consultation</h3>
-          <p>We visit your space, discuss your vision, and provide a detailed estimate — always free, always honest.</p>
+  <!-- Why Us / About -->
+  <section class="why" id="why">
+    <div class="why__image">
+      <img src="https://images.unsplash.com/photo-1500628550463-c8881a54d4d4?w=1200&q=80&fit=crop" alt="Professional painter at work" loading="lazy">
+    </div>
+    <div class="why__content">
+      <p class="section-tag">Why White Colors</p>
+      <h2 class="section-title">We treat every home<br><em>like it's our own.</em></h2>
+      <div class="why__points">
+        <div class="why__point">
+          <div class="why__point-num">01</div>
+          <div>
+            <h3>Obsessive Prep Work</h3>
+            <p>80% of a great paint job is preparation. We patch, sand, prime, and tape with surgical precision before a single brush stroke.</p>
+          </div>
         </div>
-        <div class="process__step">
-          <div class="process__number">02</div>
-          <h3>Preparation</h3>
-          <p>Meticulous surface prep: patching, sanding, priming. The foundation of every flawless finish.</p>
+        <div class="why__point">
+          <div class="why__point-num">02</div>
+          <div>
+            <h3>Premium Materials Only</h3>
+            <p>We use Benjamin Moore and Sherwin-Williams exclusively. No cutting corners, no cheap paint, no exceptions.</p>
+          </div>
         </div>
-        <div class="process__step">
-          <div class="process__number">03</div>
-          <h3>Painting</h3>
-          <p>Premium paints applied with precision. Multiple coats, clean lines, zero shortcuts.</p>
+        <div class="why__point">
+          <div class="why__point-num">03</div>
+          <div>
+            <h3>Clean & Respectful</h3>
+            <p>We cover everything, clean up daily, and leave your home spotless. You'll barely know we were there — except for the beautiful walls.</p>
+          </div>
         </div>
-        <div class="process__step">
-          <div class="process__number">04</div>
-          <h3>Walkthrough</h3>
-          <p>Final inspection together. We don't leave until every detail meets your expectations.</p>
+        <div class="why__point">
+          <div class="why__point-num">04</div>
+          <div>
+            <h3>3-Year Warranty</h3>
+            <p>We stand behind our work. If anything peels, chips, or fades within 3 years, we come back and fix it — free.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -262,23 +236,23 @@
   <!-- Testimonials -->
   <section class="testimonials" id="testimonials">
     <div class="container">
-      <div class="section-header">
-        <p class="section-tag">Kind Words</p>
-        <h2 class="section-title">What our clients<br><em>say.</em></h2>
+      <div class="section-header section-header--center">
+        <p class="section-tag">Reviews</p>
+        <h2 class="section-title">Don't take our word for it.</h2>
       </div>
       <div class="testimonials__grid">
         <blockquote class="testimonial">
-          <div class="testimonial__stars">
+          <div class="testimonial__stars" aria-label="5 out of 5 stars">
             <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
           </div>
           <p>"White Colors transformed our 1920s home. The attention to detail on the trim work was unlike anything we'd seen from other painters. Worth every penny."</p>
           <footer>
             <strong>Margaret & Tom H.</strong>
-            <span>Heritage Hill Residence</span>
+            <span>Heritage Hill — Full Interior</span>
           </footer>
         </blockquote>
         <blockquote class="testimonial">
-          <div class="testimonial__stars">
+          <div class="testimonial__stars" aria-label="5 out of 5 stars">
             <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
           </div>
           <p>"They painted our entire office over a weekend so we didn't miss a single workday. Professional, clean, and the color consultation was spot-on."</p>
@@ -288,10 +262,10 @@
           </footer>
         </blockquote>
         <blockquote class="testimonial">
-          <div class="testimonial__stars">
+          <div class="testimonial__stars" aria-label="5 out of 5 stars">
             <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
           </div>
-          <p>"Third time hiring White Colors. They repainted the kitchen, then the exterior, and just finished our rental property. Consistently excellent."</p>
+          <p>"Third time hiring White Colors. They repainted the kitchen, the exterior, and just finished our rental. Consistently excellent work every single time."</p>
           <footer>
             <strong>Sarah Nguyen</strong>
             <span>Repeat Client — 3 Projects</span>
@@ -301,36 +275,60 @@
     </div>
   </section>
 
-  <!-- CTA / Contact -->
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg">
+      <img src="https://images.unsplash.com/photo-1564013799904-bd0a41616365?w=1920&q=80&fit=crop" alt="Beautiful painted home" loading="lazy">
+      <div class="cta-banner__overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-banner__content">
+        <h2>Ready to transform your space?</h2>
+        <p>Free estimates within 48 hours. No pressure, no obligation.</p>
+        <a href="#contact" class="btn btn--accent btn--lg">Get Your Free Estimate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section class="contact" id="contact">
     <div class="container">
       <div class="contact__inner">
         <div class="contact__text">
-          <p class="section-tag">Start Your Project</p>
-          <h2 class="section-title">Ready for a<br><em>fresh coat?</em></h2>
+          <p class="section-tag">Contact Us</p>
+          <h2 class="section-title">Let's talk about<br><em>your project.</em></h2>
           <p class="contact__desc">
-            Get a free, no-obligation estimate. We'll visit your space, discuss
-            your vision, and provide transparent pricing within 48 hours.
+            Fill out the form or give us a call. We'll schedule a free on-site
+            estimate and have a quote to you within 48 hours.
           </p>
           <div class="contact__details">
             <div class="contact__detail">
-              <strong>Call Us</strong>
-              <a href="tel:+15551234567">(555) 123-4567</a>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+15551234567">(555) 123-4567</a>
+              </div>
             </div>
             <div class="contact__detail">
-              <strong>Email</strong>
-              <a href="mailto:hello@whitecolorspainting.com">hello@whitecolorspainting.com</a>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@whitecolorspainting.com">hello@whitecolorspainting.com</a>
+              </div>
             </div>
             <div class="contact__detail">
-              <strong>Service Area</strong>
-              <span>Metro Area & Surrounding 30mi</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Service Area</strong>
+                <span>Metro Area & 30mi Radius</span>
+              </div>
             </div>
           </div>
         </div>
         <form class="contact__form" id="contactForm">
           <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your full name">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Smith">
           </div>
           <div class="form-row">
             <div class="form-group">
@@ -349,15 +347,16 @@
               <option value="interior">Interior Painting</option>
               <option value="exterior">Exterior Painting</option>
               <option value="commercial">Commercial Project</option>
+              <option value="cabinets">Cabinet Refinishing</option>
               <option value="consultation">Color Consultation</option>
               <option value="other">Other</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="message">Tell Us About Your Project</label>
-            <textarea id="message" name="message" rows="4" placeholder="Square footage, timeline, any details that help us give you an accurate quote..."></textarea>
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Approximate square footage, rooms, timeline, anything that helps us quote accurately..."></textarea>
           </div>
-          <button type="submit" class="btn btn--primary btn--full">Request Free Estimate</button>
+          <button type="submit" class="btn btn--accent btn--full">Send Request</button>
         </form>
       </div>
     </div>
@@ -369,10 +368,12 @@
       <div class="footer__inner">
         <div class="footer__brand">
           <a href="#" class="nav__logo">
-            <span class="nav__logo-mark"></span>
-            White Colors
+            <div class="nav__logo-icon">
+              <span></span><span></span><span></span>
+            </div>
+            White Colors<span class="nav__logo-sub">Painting Co.</span>
           </a>
-          <p>Premium painting services with an artist's touch. Licensed, insured, and committed to excellence.</p>
+          <p>Licensed, insured, and obsessed with doing great work. Serving the metro area since 2018.</p>
         </div>
         <div class="footer__links">
           <div class="footer__col">
@@ -385,15 +386,15 @@
           <div class="footer__col">
             <h4>Company</h4>
             <a href="#work">Portfolio</a>
-            <a href="#process">Our Process</a>
+            <a href="#why">Why Us</a>
             <a href="#testimonials">Reviews</a>
             <a href="#contact">Contact</a>
           </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <p>&copy; 2026 White Colors Painting. All rights reserved.</p>
-        <p>Licensed & Insured &mdash; Serving the metro area since 2018</p>
+        <p>&copy; 2026 White Colors Painting Co. All rights reserved.</p>
+        <p>Licensed & Insured</p>
       </div>
     </div>
   </footer>
